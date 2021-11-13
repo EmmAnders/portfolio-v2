@@ -1,0 +1,92 @@
+/* @import "./base/reset.scss";
+@import "./base/global.scss";
+@import "./base/fonts.scss";
+ */
+
+/* Debug */
+body.debug-mode::before {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  font-size: 12px;
+  padding-left: 4px;
+  padding-right: 4px;
+  background-color: pink;
+  opacity: 1;
+  color: #9612a2;
+  pointer-events: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $primary-font;
+  background-color: $bg-color;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+span,
+li {
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+  transition: ease-in 0.3s;
+  &:hover {
+    color: $grey;
+  }
+}
+
+.row {
+  @include row;
+}
+
+.column {
+  @include column;
+}
+
+.double-column {
+  @include column;
+}
+
+@media screen and (min-width: 800px) {
+  .column {
+    flex: 1;
+  }
+
+  .double-column {
+    flex: 2;
+  }
+}
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 1s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
