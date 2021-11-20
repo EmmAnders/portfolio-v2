@@ -2,7 +2,7 @@
   <nav class="site-navigation">
     <ul class="site-navigation-inner row">
       <li class="site-navigation-inner-left column">
-        <NuxtLink to="/home">EM<br />MA</NuxtLink>
+        <NuxtLink to="/">EM<br />MA</NuxtLink>
       </li>
       <li class="site-navigation-inner-center column">
         <p class="serif">Seeking internship jan-may 2022</p>
