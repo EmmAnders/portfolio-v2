@@ -1,4 +1,6 @@
 export default {
+  target: "static",
+  ssr: false,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: "EMMA",
@@ -19,14 +21,6 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ["@/assets/_main.scss"],
-
-  target: "static",
-
-  generate: {
-    fallback: true,
-  },
-
-  ssr: false,
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [{ src: "@/plugins/global", mode: "client" }],
