@@ -42,7 +42,7 @@
           </div>
 
           <button @mouseenter="onMouseEnter" class="download">
-            Download Resume
+            <a href="/emma-andersson-cv.pdf" download="">Download</a>
             <IconArrow ref="arrow" class="icon" />
           </button>
         </div>
@@ -158,6 +158,12 @@ export default {
       }
     }
     &-right {
+      margin-bottom: 10vh;
+
+      @include medium {
+        margin-bottom: 0px;
+      }
+
       .content {
         margin-bottom: $margin-l;
         @include medium {
