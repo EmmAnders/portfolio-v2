@@ -4,7 +4,6 @@
     <div class="site-inner">
       <Nuxt id="content" class="content-main" />
     </div>
-    <footer class="site-footer"><SiteFooter /></footer>
   </div>
 </template>
 
@@ -13,23 +12,19 @@
   @include container;
 
   .content-main {
-    height: 75vh;
-    margin: 3rem 0rem;
+    height: 90vh;
+    margin-top: $padding-m;
 
-    @include flex-center;
+    @include medium {
+      margin-top: $padding-l;
+    }
+    @include large {
+      @include flex-center;
+      margin-top: 0px;
+    }
   }
   &-header {
     height: $site-header-height;
-    display: flex;
-    align-items: center;
-  }
-
-  &-footer {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    height: $site-footer-height;
   }
 }
 </style>

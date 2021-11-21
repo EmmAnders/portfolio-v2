@@ -132,7 +132,8 @@ export default {
       @include flex-space-between;
       align-items: flex-start;
 
-      @include medium {
+      @include large {
+        margin-top: 0px;
         padding-right: $padding-xl;
       }
 
@@ -144,7 +145,7 @@ export default {
         @include copy-s;
         margin: $margin-m 0rem;
 
-        @include medium {
+        @include large {
           margin: 0;
         }
 
@@ -160,13 +161,13 @@ export default {
     &-right {
       margin-bottom: 10vh;
 
-      @include medium {
+      @include large {
         margin-bottom: 0px;
       }
 
       .content {
         margin-bottom: $margin-l;
-        @include medium {
+        @include large {
           margin-bottom: $margin-xxl;
         }
       }
@@ -174,7 +175,7 @@ export default {
         margin-bottom: $margin-xxs;
         font-family: $secondary-font;
 
-        @include medium {
+        @include large {
           margin-bottom: 0px;
           margin-right: $margin-l;
         }
@@ -208,8 +209,10 @@ export default {
 
         svg {
           margin-left: $margin-xs;
-          height: 17px;
+          color: $black;
+          height: 14px;
           width: 17px;
+          stroke-width: 1px;
         }
 
         &:hover {

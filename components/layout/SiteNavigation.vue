@@ -5,7 +5,7 @@
         <NuxtLink to="/">EM<br />MA</NuxtLink>
       </li>
       <li class="site-navigation-inner-center column">
-        <p class="serif">Seeking internship jan-may 2022</p>
+        <p class="serif">Seeking internship jan-june 2022</p>
       </li>
 
       <div class="site-navigation-inner-right column">
@@ -36,26 +36,34 @@ export default {
 
 .site-navigation {
   text-transform: uppercase;
+  align-items: center;
+  height: 100%;
   width: 100%;
 
   &-inner {
+    height: 100%;
+    width: 100%;
     align-items: center;
 
     &-left {
-      @include copy-m;
+      @include copy-s;
       font-weight: 400;
       align-items: left;
+
+      @include large {
+        @include copy-m;
+      }
     }
 
     &-center {
       position: fixed;
-      bottom: 0;
+      bottom: 2vh;
       left: 0;
       width: 100%;
       padding: $padding-s;
       align-items: center;
 
-      @include medium {
+      @include large {
         position: static;
         display: block;
         text-align: center;
@@ -64,7 +72,7 @@ export default {
 
     &-right {
       align-items: center;
-      @include medium {
+      @include large {
         align-items: flex-end;
       }
 
@@ -74,26 +82,6 @@ export default {
 
       li:not(:last-child) {
         margin-right: $margin-s;
-      }
-    }
-  }
-
-  &-sidebar {
-    display: block;
-    position: fixed;
-    top: 50%;
-    transform: rotate(270deg);
-    transform-origin: left 0;
-
-    &-inner {
-      display: flex;
-
-      li {
-        margin-right: $margin-s;
-
-        a {
-          color: $grey;
-        }
       }
     }
   }

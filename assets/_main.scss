@@ -73,7 +73,7 @@ a {
   @include column;
 }
 
-@media screen and (min-width: 800px) {
+@include large {
   .column {
     flex: 1;
   }

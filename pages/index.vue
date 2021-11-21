@@ -1,10 +1,9 @@
 <template>
   <div class="home-container row">
-    <p class="double-column actiom">
+    <p>
       Front-End Developer <br />
       Based in Copenhagen.
     </p>
-    <p class="column"></p>
   </div>
 </template>
 
@@ -17,9 +16,12 @@ export default {
 <style lang="scss">
 .home-container {
   height: 100%;
-  display: flex;
-  align-items: flex-end;
   @include copy-l;
   text-indent: 3rem;
+
+  p {
+    position: absolute;
+    bottom: 10vh;
+  }
 }
 </style>
