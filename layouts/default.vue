@@ -15,6 +15,8 @@
   .content-main {
     height: 75vh;
     margin: 3rem 0rem;
+
+    @include flex-center;
   }
   &-header {
     height: $site-header-height;
