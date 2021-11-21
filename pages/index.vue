@@ -22,6 +22,10 @@ export default {
   p {
     position: absolute;
     bottom: 10vh;
+
+    @include large {
+      @include container;
+    }
   }
 }
 </style>
